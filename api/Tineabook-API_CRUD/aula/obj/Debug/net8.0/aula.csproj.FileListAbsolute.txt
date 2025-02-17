@@ -1,0 +1,105 @@
+C:\Users\Pyethra (dev)\Documents\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Pyethra (dev)\Documents\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\appsettings.json
+C:\Users\Pyethra (dev)\Documents\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\aula.exe
+C:\Users\Pyethra (dev)\Documents\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\aula.deps.json
+C:\Users\Pyethra (dev)\Documents\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\aula.runtimeconfig.json
+C:\Users\Pyethra (dev)\Documents\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\aula.dll
+C:\Users\Pyethra (dev)\Documents\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\aula.pdb
+C:\Users\Pyethra (dev)\Documents\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+C:\Users\Pyethra (dev)\Documents\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\Google.Protobuf.dll
+C:\Users\Pyethra (dev)\Documents\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\K4os.Compression.LZ4.dll
+C:\Users\Pyethra (dev)\Documents\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\K4os.Compression.LZ4.Streams.dll
+C:\Users\Pyethra (dev)\Documents\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\K4os.Hash.xxHash.dll
+C:\Users\Pyethra (dev)\Documents\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\Pyethra (dev)\Documents\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\Pyethra (dev)\Documents\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\MySql.Data.dll
+C:\Users\Pyethra (dev)\Documents\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Pyethra (dev)\Documents\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Pyethra (dev)\Documents\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Pyethra (dev)\Documents\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Pyethra (dev)\Documents\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Pyethra (dev)\Documents\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Pyethra (dev)\Documents\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\Pyethra (dev)\Documents\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\Pyethra (dev)\Documents\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\ZstdSharp.dll
+C:\Users\Pyethra (dev)\Documents\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\runtimes\win-x64\native\comerr64.dll
+C:\Users\Pyethra (dev)\Documents\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\runtimes\win-x64\native\gssapi64.dll
+C:\Users\Pyethra (dev)\Documents\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\Pyethra (dev)\Documents\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\runtimes\win-x64\native\krb5_64.dll
+C:\Users\Pyethra (dev)\Documents\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\runtimes\win-x64\native\krbcc64.dll
+C:\Users\Pyethra (dev)\Documents\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Windows.Extensions.dll
+C:\Users\Pyethra (dev)\Documents\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\obj\Debug\net8.0\aula.csproj.AssemblyReference.cache
+C:\Users\Pyethra (dev)\Documents\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\obj\Debug\net8.0\aula.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pyethra (dev)\Documents\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\obj\Debug\net8.0\aula.AssemblyInfoInputs.cache
+C:\Users\Pyethra (dev)\Documents\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\obj\Debug\net8.0\aula.AssemblyInfo.cs
+C:\Users\Pyethra (dev)\Documents\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\obj\Debug\net8.0\aula.csproj.CoreCompileInputs.cache
+C:\Users\Pyethra (dev)\Documents\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\obj\Debug\net8.0\aula.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Pyethra (dev)\Documents\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\obj\Debug\net8.0\aula.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Pyethra (dev)\Documents\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\obj\Debug\net8.0\aula.sourcelink.json
+C:\Users\Pyethra (dev)\Documents\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Pyethra (dev)\Documents\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Pyethra (dev)\Documents\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\obj\Debug\net8.0\staticwebassets\msbuild.aula.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Pyethra (dev)\Documents\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\obj\Debug\net8.0\staticwebassets\msbuild.build.aula.props
+C:\Users\Pyethra (dev)\Documents\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.aula.props
+C:\Users\Pyethra (dev)\Documents\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.aula.props
+C:\Users\Pyethra (dev)\Documents\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Pyethra (dev)\Documents\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\obj\Debug\net8.0\scopedcss\bundle\aula.styles.css
+C:\Users\Pyethra (dev)\Documents\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\obj\Debug\net8.0\aula.csproj.Up2Date
+C:\Users\Pyethra (dev)\Documents\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\obj\Debug\net8.0\aula.dll
+C:\Users\Pyethra (dev)\Documents\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\obj\Debug\net8.0\refint\aula.dll
+C:\Users\Pyethra (dev)\Documents\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\obj\Debug\net8.0\aula.pdb
+C:\Users\Pyethra (dev)\Documents\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\obj\Debug\net8.0\aula.genruntimeconfig.cache
+C:\Users\Pyethra (dev)\Documents\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\obj\Debug\net8.0\ref\aula.dll
+C:\Users\Pichau\Documents\Code-study\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Pichau\Documents\Code-study\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\appsettings.json
+C:\Users\Pichau\Documents\Code-study\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\aula.exe
+C:\Users\Pichau\Documents\Code-study\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\aula.deps.json
+C:\Users\Pichau\Documents\Code-study\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\aula.runtimeconfig.json
+C:\Users\Pichau\Documents\Code-study\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\aula.dll
+C:\Users\Pichau\Documents\Code-study\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\aula.pdb
+C:\Users\Pichau\Documents\Code-study\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+C:\Users\Pichau\Documents\Code-study\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\Google.Protobuf.dll
+C:\Users\Pichau\Documents\Code-study\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\K4os.Compression.LZ4.dll
+C:\Users\Pichau\Documents\Code-study\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\K4os.Compression.LZ4.Streams.dll
+C:\Users\Pichau\Documents\Code-study\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\K4os.Hash.xxHash.dll
+C:\Users\Pichau\Documents\Code-study\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\Pichau\Documents\Code-study\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\Pichau\Documents\Code-study\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\MySql.Data.dll
+C:\Users\Pichau\Documents\Code-study\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Pichau\Documents\Code-study\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Pichau\Documents\Code-study\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Pichau\Documents\Code-study\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Pichau\Documents\Code-study\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Pichau\Documents\Code-study\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Pichau\Documents\Code-study\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\Pichau\Documents\Code-study\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\System.Text.Json.dll
+C:\Users\Pichau\Documents\Code-study\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\Pichau\Documents\Code-study\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\ZstdSharp.dll
+C:\Users\Pichau\Documents\Code-study\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\runtimes\win-x64\native\comerr64.dll
+C:\Users\Pichau\Documents\Code-study\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\runtimes\win-x64\native\gssapi64.dll
+C:\Users\Pichau\Documents\Code-study\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\Pichau\Documents\Code-study\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\runtimes\win-x64\native\krb5_64.dll
+C:\Users\Pichau\Documents\Code-study\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\runtimes\win-x64\native\krbcc64.dll
+C:\Users\Pichau\Documents\Code-study\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Windows.Extensions.dll
+C:\Users\Pichau\Documents\Code-study\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\obj\Debug\net8.0\aula.csproj.AssemblyReference.cache
+C:\Users\Pichau\Documents\Code-study\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\obj\Debug\net8.0\aula.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pichau\Documents\Code-study\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\obj\Debug\net8.0\aula.AssemblyInfoInputs.cache
+C:\Users\Pichau\Documents\Code-study\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\obj\Debug\net8.0\aula.AssemblyInfo.cs
+C:\Users\Pichau\Documents\Code-study\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\obj\Debug\net8.0\aula.csproj.CoreCompileInputs.cache
+C:\Users\Pichau\Documents\Code-study\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\obj\Debug\net8.0\aula.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Pichau\Documents\Code-study\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\obj\Debug\net8.0\aula.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Pichau\Documents\Code-study\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\obj\Debug\net8.0\aula.sourcelink.json
+C:\Users\Pichau\Documents\Code-study\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Pichau\Documents\Code-study\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Pichau\Documents\Code-study\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\obj\Debug\net8.0\staticwebassets\msbuild.aula.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Pichau\Documents\Code-study\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\obj\Debug\net8.0\staticwebassets\msbuild.build.aula.props
+C:\Users\Pichau\Documents\Code-study\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.aula.props
+C:\Users\Pichau\Documents\Code-study\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.aula.props
+C:\Users\Pichau\Documents\Code-study\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Pichau\Documents\Code-study\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\obj\Debug\net8.0\scopedcss\bundle\aula.styles.css
+C:\Users\Pichau\Documents\Code-study\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\obj\Debug\net8.0\aula.csproj.Up2Date
+C:\Users\Pichau\Documents\Code-study\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\obj\Debug\net8.0\aula.dll
+C:\Users\Pichau\Documents\Code-study\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\obj\Debug\net8.0\refint\aula.dll
+C:\Users\Pichau\Documents\Code-study\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\obj\Debug\net8.0\aula.pdb
+C:\Users\Pichau\Documents\Code-study\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\obj\Debug\net8.0\aula.genruntimeconfig.cache
+C:\Users\Pichau\Documents\Code-study\TCC-DS-ETEC\Trabalho prático\Projeto\Tineabook-API_CRUD\aula\obj\Debug\net8.0\ref\aula.dll
