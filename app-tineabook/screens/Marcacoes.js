@@ -10,6 +10,7 @@ import {
 import { MarcacoesContext } from './MarcacoesContext';
 import * as Progress from 'react-native-progress';
 import { Dimensions } from 'react-native';
+import {Marcacoes} from 'marcacoes.js';
 
 const windowWidth = Dimensions.get('window').width;
 
@@ -19,7 +20,7 @@ const Marcacoes = () => {
   const marcacoesInversas = [...marcacoes].reverse();
 
   const renderMarcacao = ({ item }) => (
-    <View style={styles.marcacaoContainer}>
+    <View style={styles.Marcacao.marcacaoContainer}>
       <Image source={{ uri: item.capa }} style={styles.thumbnail} />
       <View style={styles.info}>
         <Text style={styles.title}>{item.titulo}</Text>
@@ -64,7 +65,7 @@ const Marcacoes = () => {
   );
 };
 
-const styles = StyleSheet.create({
+export const styles = StyleSheet.create({
   barraProgresso:{
     marginTop:5
   },
@@ -104,5 +105,6 @@ const styles = StyleSheet.create({
     fontWeight:'bold'
   },
 });
+
 
 export default Marcacoes;
