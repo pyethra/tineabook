@@ -1,0 +1,11 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 500,
+            "driver": "SQLite",
+            "name": "Server-test_Api",
+            "database": "${workspaceFolder:tineabook}/bd/tcc-ds.sql"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}
