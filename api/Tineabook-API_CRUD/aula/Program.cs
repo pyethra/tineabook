@@ -34,7 +34,7 @@ app.MapGet("/consultaUsuarios", () =>
 .WithName("ListarAluno");
 
 
-//Cadastro Usuários
+//Cadastro Usuï¿½rios
 app.MapPost("/cadastroUsuario", ([FromBody] JsonObject dados) =>
 {
     if(

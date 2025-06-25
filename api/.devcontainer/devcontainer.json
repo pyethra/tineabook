@@ -1,0 +1,14 @@
+{
+  "name": "C# .NET API",
+  "image": "mcr.microsoft.com/devcontainers/dotnet:8.0",
+  "forwardPorts": [5000, 5001],
+  "postCreateCommand": "dotnet restore",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-dotnettools.csharp",
+        "ms-azuretools.vscode-docker"
+      ]
+    }
+  }
+}
