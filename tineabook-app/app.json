@@ -1,0 +1,13 @@
+{
+  "expo": {
+    "name": "tineabook-app",
+    "slug": "tineabook-app",
+    "version": "1.0.0",
+    "android": {
+      "package": "com.anonymous.tineabookapp"
+    },
+    "ios": {
+      "bundleIdentifier": "com.anonymous.tineabookapp"
+    }
+  }
+}
