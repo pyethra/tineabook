@@ -1,129 +1,19 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, Image, StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator, TransitionPresets } from '@react-navigation/stack';
-import Pesquisa from '../app-tineabook/screens/Pesquisa';
-import ReviewsScreen from '../app-tineabook/screens/ReviewsScreen';
-import MarcadorPagina from '../app-tineabook/screens/MarcadorPagina';
-import Marcacoes from './screens/Marcacoes';
 import { Entypo, Feather } from '@expo/vector-icons';
 import { MarcacoesProvider } from '../app-tineabook/screens/MarcacoesContext';
 
-const Tab = createBottomTabNavigator();
-const Stack = createStackNavigator();
+import { Navigation_bar } from './screens/*Navigation_bar'
 
-const WelcomeScreen = ({ navigation }) => {
+function App() {
   return (
-    <View style={styles.welcomeContainer}>
-      <Image
-        source={require('./assets/Vector.png')}
-        style={styles.logo}
-      />
-      <Text style={styles.welcomeText}>Bem-vindo ao seu app de leitura!</Text>
-      <Text style={styles.subtitle}>Descubra, marque e resenhe seus livros favoritos.</Text>
-      <TouchableOpacity
-        style={styles.startButton}
-        onPress={() => navigation.replace('MainApp')}
-      >
-        <Text style={styles.startButtonText}>Iniciar</Text>
-      </TouchableOpacity>
-    </View>
+    
+    <Navigation_bar></Navigation_bar>
+
   );
 };
-
-const FeedStack = () => (
-  <Stack.Navigator>
-    <Stack.Screen
-      name="Feed"
-      component={Pesquisa}
-      options={{
-        headerTitle: () => (
-          <Image
-            source={require('./assets/Vector.png')}
-            style={{ width: 100, height: 40 }}
-          />
-        ),
-        headerShown: true,
-      }}
-    />
-    <Stack.Screen name="ReviewDetail" component={ReviewsScreen} />
-  </Stack.Navigator>
-);
-
-const TabNavigator = () => (
-  <Tab.Navigator
-    screenOptions={{
-      tabBarStyle: {
-        backgroundColor: '#121212',
-        borderTopColor: 'transparent',
-      },
-      tabBarActiveTintColor: '#FFF',
-      tabBarInactiveTintColor: '#888',
-      tabBarShowLabel: false,
-    }}
-  >
-    <Tab.Screen
-      name="Home"
-      component={ReviewsScreen}
-      options={{
-        tabBarIcon: ({ color, focused }) => (
-          <Feather name="home" size={30} color={focused ? '#FFF' : '#888'} />
-        ),
-      }}
-    />
-    <Tab.Screen
-      name="Pesquisa"
-      component={Pesquisa}
-      options={{
-        tabBarIcon: ({ color, focused }) => (
-          <Entypo name="magnifying-glass" size={30} color={focused ? '#FFF' : '#888'} />
-        ),
-      }}
-    />
-    <Tab.Screen
-      name="Marcador de Páginas"
-      component={MarcadorPagina}
-      options={{
-        tabBarIcon: ({ color, focused }) => (
-          <Entypo name="circle-with-plus" size={30} color={focused ? '#FFF' : '#888'} />
-        ),
-      }}
-    />
-    <Tab.Screen
-      name="Marcações"
-      component={Marcacoes}
-      options={{
-        tabBarIcon: ({ color, focused }) => (
-          <Entypo name="archive" size={30} color={focused ? '#FFF' : '#888'} />
-        ),
-      }}
-    />
-  </Tab.Navigator>
-);
-
-const MainStack = () => (
-  <Stack.Navigator
-    screenOptions={{
-      headerShown: false,
-      ...TransitionPresets.SlideFromRightIOS,
-    }}
-  >
-    <Stack.Screen name="Welcome" component={WelcomeScreen} />
-    <Stack.Screen name="MainApp" component={TabNavigator} />
-  </Stack.Navigator>
-);
-
-const App = () => {
-  return (
-    <MarcacoesProvider>
-      <NavigationContainer>
-        <MainStack />
-      </NavigationContainer>
-    </MarcacoesProvider>
-  );
-};
-
 
 
 const styles = StyleSheet.create({

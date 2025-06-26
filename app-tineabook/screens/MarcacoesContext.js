@@ -1,4 +1,4 @@
-// MarcacoesContext.js
+/*
 import React, { createContext, useState, useEffect } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
@@ -41,3 +41,4 @@ export const MarcacoesProvider = ({ children }) => {
     </MarcacoesContext.Provider>
   );
 };
+*/

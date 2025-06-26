@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+/*import React, { useContext } from 'react';
 import {
   View,
   Text,
@@ -108,3 +108,4 @@ export const styles = StyleSheet.create({
 
 
 export default Marcacoes;
+*/ 
