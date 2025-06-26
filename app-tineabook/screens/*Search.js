@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+/*import React, { useState, useEffect } from 'react';
 import { View, TextInput, Button, FlatList, Text } from 'react-native';
 import { fetchPesquisa_API } from './fetchPesquisa_API'; // Importando a função
 import { barra_pesquisa } from '../components/barra_pesquisa'
@@ -25,7 +25,6 @@ const Pesquisa = () => {
                 onPress={handleSearch}  
             />
 
-            {/* Indicador de carregamento */}
             {loading && <Text>Carregando...</Text>}
 
 
@@ -43,3 +42,4 @@ const Pesquisa = () => {
 };
 
 export default Pesquisa;
+*/

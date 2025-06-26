@@ -4,13 +4,16 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator, TransitionPresets } from '@react-navigation/stack';
 import { Entypo, Feather } from '@expo/vector-icons';
 import { MarcacoesProvider } from '../app-tineabook/screens/MarcacoesContext';
-
+import {StyleSheet} from 'react-native';
 import { Navigation_bar } from './screens/*Navigation_bar'
+import { View } from 'react-native-web';
 
 function App() {
   return (
     
-    <Navigation_bar></Navigation_bar>
+    <View>
+      <Text>Olá mundo</Text>
+    </View>
 
   );
 };
