@@ -214,16 +214,6 @@ Distribuído sob a licença **MIT** — consulte [LICENSE](LICENSE) para mais de
 
 ---
 
-## 👩‍💼 Contato & Equipe
-
-| Nome        | Função           | LinkedIn                                                                           |
-| ----------- | ---------------- | ---------------------------------------------------------------------------------- |
-| Lucas Alves | Lead Backend/API | [https://www.linkedin.com/in/lucas-alves](https://www.linkedin.com/in/lucas-alves) |
-
-
-
----
-
 ## 🙏 Agradecimentos
 
 - [Google Books API](https://developers.google.com/books) pelo acesso ao catálogo público.
