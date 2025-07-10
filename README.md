@@ -214,6 +214,10 @@ Distribuído sob a licença **MIT** — consulte [LICENSE](LICENSE) para mais de
 
 ---
 
+## 👩‍💼 Instagram Tineabook 
+
+https://www.instagram.com/tineabook?igsh=MWg5cndzbDFvaXJkOQ==
+
 ## 🙏 Agradecimentos
 
 - [Google Books API](https://developers.google.com/books) pelo acesso ao catálogo público.
