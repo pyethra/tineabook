@@ -10,11 +10,9 @@ import { View } from 'react-native-web';
 
 function App() {
   return (
-    
     <View>
       <Text>Olá mundo</Text>
     </View>
-
   );
 };
 
