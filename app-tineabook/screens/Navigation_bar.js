@@ -4,7 +4,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
 const Stack = createNativeStackNavigator();
 
-import {Screen_Feed} from './*Feed'
+import {Screen_Feed} from './Feed'
 import {Screen_Search} from './*Search'
 import {Screen_userProfile} from './*userProfile'
 
