@@ -123,7 +123,7 @@ Distribuído sob a licença MIT. Veja `LICENSE` para detalhes.
 
 ## 👩‍💼 Instagram Tineabook
 
-[https://www.instagram.com/tineabook] (https://www.instagram.com/tineabook)
+https://www.instagram.com/tineabook
 
 ---
 
