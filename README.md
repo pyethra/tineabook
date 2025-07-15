@@ -70,12 +70,7 @@ $ cd tineabook
 
 ### 1. API (Node.js / Express)
 
-```bash
-cd api
-npm install
-cp .env.example .env   # configure credenciais do banco
-npm run dev             # inicia com nodemon
-```
+(Em breve)
 
 ### 2. App Mobile (Expo)
 
