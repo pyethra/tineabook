@@ -56,7 +56,14 @@
 
 ## ⚙️ Pré-requisitos
 
-(Em breve)
+| Ferramenta     | Versão mínima | Observação               |
+| -------------- | ------------- | ------------------------ |
+| **Git**        | 2.38          | Controle de versão       |
+| **Node.js**    | 18 LTS        | Recomendado usar **nvm** |
+| **Expo CLI**   | 7+            | npm i -g expo-cli      |
+| **.NET SDK**   | 8+            | Necessário para api/   |
+| **PostgreSQL** | 15+           | Local ou serviço cloud   |
+| **Yarn / npm** | 9+            | Gerenciador de pacotes   |
 
 ---
 
