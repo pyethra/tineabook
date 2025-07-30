@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "tineabook-app",
-    "slug": "tineabook-app",
+    "name": "app-tineabook",
+    "slug": "app-tineabook",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
