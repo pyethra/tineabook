@@ -6,10 +6,9 @@ import { createStackNavigator, TransitionPresets } from '@react-navigation/stack
 
 import Pesquisa from './src/Features/Pesquisa';
 import Home from './src/Geral/screens/Home'; //reviewsScreen
-import MarcadorPagina from './screens/MarcadorPagina'; //addHistorico
-import Marcacoes from './screens/Marcacoes'; //Estante pessoal
+import Estante_Pessoal from './src/Geral/screens/Estante_pessoal'; //Estante pessoal
 import { Entypo, Feather } from '@expo/vector-icons';
-import { MarcacoesProvider } from './screens/MarcacoesContext';
+import { MarcacoesProvider } from './src/Geral/screens/Marcacoes_Context';
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
@@ -48,7 +47,7 @@ const TabNavigator = () => (
   >
     <Tab.Screen
       name="Home"
-      component={ReviewsScreen}
+      component={Home}
       options={{
         tabBarIcon: ({ color, focused }) => (
           <Feather name="home" size={30} color={focused ? '#FFF' : '#888'} />
@@ -65,17 +64,8 @@ const TabNavigator = () => (
       }}
     />
     <Tab.Screen
-      name="Marcador de Páginas"
-      component={MarcadorPagina}
-      options={{
-        tabBarIcon: ({ color, focused }) => (
-          <Entypo name="circle-with-plus" size={30} color={focused ? '#FFF' : '#888'} />
-        ),
-      }}
-    />
-    <Tab.Screen
-      name="Marcações"
-      component={Marcacoes}
+      name="Estante_Pessoal"
+      component={Estante_Pessoal}
       options={{
         tabBarIcon: ({ color, focused }) => (
           <Entypo name="archive" size={30} color={focused ? '#FFF' : '#888'} />

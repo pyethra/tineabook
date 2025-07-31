@@ -16,7 +16,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { AirbnbRating } from 'react-native-ratings';
 import { useFocusEffect } from '@react-navigation/native';
 
-import IconeVoltar from '../assets/chevron-left.png';
+import IconeVoltar from '../../../assets/chevron-left.png'; 
 
 const Pesquisa = ({ navigation }) => {
   const [searchTerm, setSearchTerm] = useState('');
