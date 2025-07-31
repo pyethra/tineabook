@@ -1,12 +1,5 @@
-const path = require('path');
+const { getDefaultConfig } = require('@expo/metro-config');
 
-module.exports = {
-  watchFolders: [
-    path.resolve(__dirname, '../'), // inclui a pasta 'app' para o Metro monitorar
-  ],
-  resolver: {
-    extraNodeModules: new Proxy({}, {
-      get: (target, name) => path.join(__dirname, `../node_modules/${name}`),
-    }),
-  },
-};
+const config = getDefaultConfig(__dirname);
+
+module.exports = config;

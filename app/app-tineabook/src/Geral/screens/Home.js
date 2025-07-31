@@ -4,7 +4,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { AirbnbRating } from 'react-native-ratings';
 import { useFocusEffect } from '@react-navigation/native';
 
-const ReviewScreen = () => {
+const Home = () => {
   const [reviews, setReviews] = useState([]);
 
   const loadReviews = async () => {
@@ -100,4 +100,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ReviewScreen;
+export default Home; // Ex Review Screen renomeado para Home para manter a consistência com o arquivo original
