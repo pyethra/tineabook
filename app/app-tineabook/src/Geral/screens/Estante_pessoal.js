@@ -7,7 +7,7 @@ import {
   StyleSheet,
   ProgressBarAndroid,
 } from 'react-native';
-import { MarcacoesContext } from './MarcacoesContext';
+import { MarcacoesContext } from '../screens/Marcacoes_Context'
 import * as Progress from 'react-native-progress';
 import { Dimensions } from 'react-native';
 
