@@ -3,6 +3,8 @@ import { View, Text, FlatList, StyleSheet, Image } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { AirbnbRating } from 'react-native-ratings';
 import { useFocusEffect } from '@react-navigation/native';
+import { useNavigation } from '@react-navigation/native';
+import { TouchableOpacity } from 'react-native';
 
 const Home = () => {
   const [reviews, setReviews] = useState([]);
@@ -23,7 +25,9 @@ const Home = () => {
     }, [])
   );
 
+  const navigation = useNavigation();
   const renderReview = ({ item }) => (
+     <TouchableOpacity onPress={() => navigation.navigate('ExibirResenha', { resenhaId: item.id })}>
     <View style={styles.reviewContainer}>
       <View style={styles.resenha}>
         <Image source={{ uri: item.coverImage }} style={styles.reviewThumbnail} />
@@ -38,11 +42,12 @@ const Home = () => {
             isDisabled
             starContainerStyle={styles.starContainer}
           />
-          <Text style={styles.reviewText}>{item.resenha}</Text>
+          <Text style={styles.reviewText} numberOfLines={2}>{item.resenha}</Text>
         </View>
       </View>
     </View>
-  );
+  </TouchableOpacity>
+);
 
   return (
     <View style={styles.container}>
