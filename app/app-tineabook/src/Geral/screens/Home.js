@@ -6,6 +6,8 @@ import { useFocusEffect } from '@react-navigation/native';
 import { useNavigation } from '@react-navigation/native';
 import { TouchableOpacity } from 'react-native';
 
+import {carregarResenha} from '../../Features/Resenha/services/carregarResenha'
+
 const Home = () => {
   const [reviews, setReviews] = useState([]);
 
@@ -21,7 +23,7 @@ const Home = () => {
 
   useFocusEffect(
     React.useCallback(() => {
-      loadReviews(); // Carrega as resenhas toda vez que a tela é focada
+      carregarResenha(); // Carrega as resenhas toda vez que a tela é focada
     }, [])
   );
 

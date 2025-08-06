@@ -11,11 +11,13 @@ const EstrelasAvaliacao = ({
     <Rating
       type="star"
       startingValue={valor}
+      ratingColor='#f8ec7fff'
       imageSize={tamanho}
       readonly={!interativo}
-      fractions={1}
+      fractions={2}
       onFinishRating={interativo ? onChange : undefined}
-      tintColor="#fff" // cor de fundo se quiser customizar
+      onSwipeRating={interativo ? onChange : undefined}
+      tintColor="green" // cor de fundo se quiser customizar
       style={{ alignSelf: 'flex-start' }}
     />
   );

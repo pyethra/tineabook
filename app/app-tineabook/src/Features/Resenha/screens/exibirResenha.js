@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { View, Text, StyleSheet, Image } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { AirbnbRating } from 'react-native-ratings';
+
+import {avaliacaoEstrelas} from '../components/avaliacaoEstrelas'
 
 const ExibirResenha = ({ route }) => {
   const { resenhaId } = route.params;
@@ -35,13 +36,11 @@ const ExibirResenha = ({ route }) => {
       <Image source={{ uri: resenha.coverImage }} style={styles.image} />
       <Text style={styles.title}>{resenha.title}</Text>
       <Text style={styles.author}>{resenha.author}</Text>
-      <AirbnbRating
-        count={5}
-        defaultRating={resenha.rating}
-        isDisabled
-        showRating={false}
-        size={20}
-      />
+      <avaliacaoEstrelas
+        valor={resenha.rating}
+        interativo={false}
+        >
+        </avaliacaoEstrelas>
       <Text style={styles.text}>{resenha.resenha}</Text>
     </View>
   );
