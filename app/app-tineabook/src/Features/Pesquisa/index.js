@@ -13,8 +13,8 @@ import {
   Keyboard,
 } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { AirbnbRating } from 'react-native-ratings';
 import { useFocusEffect } from '@react-navigation/native';
+import { Rating } from 'react-native-ratings';
 
 import IconeVoltar from '../../../assets/chevron-left.png'; 
 
@@ -162,14 +162,16 @@ const Pesquisa = ({ navigation }) => {
                   </Text>
                 </View>
               </View>
-              <AirbnbRating
-                count={5}
-                defaultRating={rating}
-                onFinishRating={setRating}
-                size={30}
-                showRating={false}
-                starContainerStyle={styles.starContainer}
-              />
+              <View>
+                <Rating
+                  type="star"
+                  ratingCount={5}
+                  imageSize={30}
+                  startingValue={rating}
+                  onFinishRating={(val) => setRating(val)}
+                  style={{ marginVertical: 10 }}
+                />
+              </View>
               <TextInput
                 placeholder="Escreva sua resenha"
                 value={resenha}
@@ -284,6 +286,7 @@ const styles = StyleSheet.create({
   starContainer: {
     marginBottom: 10,
     marginTop: 10,
+    backgroundColor:'green',
   },
 });
 

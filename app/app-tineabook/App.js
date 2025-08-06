@@ -97,8 +97,6 @@ const App = () => {
   );
 };
 
-export default App;
-
 const styles = StyleSheet.create({
   welcomeContainer: {
     flex: 1,
@@ -142,4 +140,48 @@ const styles = StyleSheet.create({
     fontWeight: '600',
     textAlign: 'center',
   },
+  welcomeContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#1E1E2C',
+    paddingHorizontal: 20,
+  },
+  logo: {
+    width: 180,
+    height: 180,
+    marginBottom: 20,
+    borderRadius:100
+  },
+  welcomeText: {
+    fontSize: 28,
+    fontWeight: 'bold',
+    color: '#FFF',
+    textAlign: 'center',
+    marginBottom: 10,
+  },
+  subtitle: {
+    fontSize: 16,
+    color: '#BBB',
+    textAlign: 'center',
+    marginBottom: 30,
+  },
+  startButton: {
+    backgroundColor: '#6C63FF',
+    paddingVertical: 15,
+    paddingHorizontal: 30,
+    borderRadius: 25,
+    shadowColor: '#000',
+    shadowOpacity: 0.2,
+    shadowRadius: 4,
+    shadowOffset: { width: 0, height: 2 },
+  },
+  startButtonText: {
+    fontSize: 18,
+    color: '#FFF',
+    fontWeight: '600',
+    textAlign: 'center',
+  },
 });
+
+export default App;
