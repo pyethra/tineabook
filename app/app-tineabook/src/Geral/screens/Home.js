@@ -6,58 +6,75 @@ import { useFocusEffect } from '@react-navigation/native';
 import { useNavigation } from '@react-navigation/native';
 import { TouchableOpacity } from 'react-native';
 
-import {carregarResenha} from '../../Features/Resenha/services/carregarResenha'
+import { avalicoesService } from '../../Features/Resenha/services/servicesAPI_Resenha'; // Ajuste o import para o seu serviço correto
 
 const Home = () => {
-  const [reviews, setReviews] = useState([]);
+  const [avaliacoes, setAvaliacoes] = useState([]); // Use apenas um estado para armazenar as avaliações
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
-  const loadReviews = async () => {
-    try {
-      const storedReviews = await AsyncStorage.getItem('reviews');
-      const reviews = storedReviews ? JSON.parse(storedReviews) : [];
-      setReviews(reviews.reverse()); // Inverte a ordem para exibir as mais recentes primeiro
-    } catch (error) {
-      console.error('Erro ao carregar resenhas:', error);
-    }
+  // Função que carrega as avaliações da API
+  const carregarResenha = () => {
+    setLoading(true);
+    setError(null);
+
+    avalicoesService.getAvaliacoes()
+      .then((dados) => {
+        setAvaliacoes(dados); // Atualiza o estado com as avaliações recebidas
+        setLoading(false);
+      })
+      .catch((erro) => {
+        setError(erro.message || 'Erro ao carregar avaliações');
+        setLoading(false);
+      });
   };
 
+  // Usando o `useFocusEffect` para chamar `carregarResenha` sempre que a tela for focada
   useFocusEffect(
     React.useCallback(() => {
-      carregarResenha(); // Carrega as resenhas toda vez que a tela é focada
+      carregarResenha(); // Carrega as resenhas cada vez que a tela recebe foco
     }, [])
   );
 
   const navigation = useNavigation();
+
+  // Função para renderizar cada item da lista de avaliações
   const renderReview = ({ item }) => (
-     <TouchableOpacity onPress={() => navigation.navigate('ExibirResenha', { resenhaId: item.id })}>
-    <View style={styles.reviewContainer}>
-      <View style={styles.resenha}>
-        <Image source={{ uri: item.coverImage }} style={styles.reviewThumbnail} />
-        <View style={styles.livro}>
-          <Text style={styles.reviewTitle}>{item.title}</Text>
-          <Text style={styles.reviewAuthor}>{item.author}</Text>
-          <AirbnbRating
-            count={5}
-            defaultRating={item.rating}
-            size={20}
-            showRating={false}
-            isDisabled
-            starContainerStyle={styles.starContainer}
-          />
-          <Text style={styles.reviewText} numberOfLines={2}>{item.resenha}</Text>
+    <TouchableOpacity onPress={() => navigation.navigate('ExibirResenha', { resenhaId: item.id })}>
+      <View style={styles.reviewContainer}>
+        <View style={styles.resenha}>
+          <Image source={{ uri: item.coverImage }} style={styles.reviewThumbnail} />
+          <View style={styles.livro}>
+            <Text style={styles.reviewTitle}>{item.title}</Text>
+            <Text style={styles.reviewAuthor}>{item.author}</Text>
+            <AirbnbRating
+              count={5}
+              defaultRating={item.estrelas} // Usando a propriedade correta para a classificação
+              size={20}
+              showRating={false}
+              isDisabled
+              starContainerStyle={styles.starContainer}
+            />
+            <Text style={styles.reviewText} numberOfLines={2}>{item.resenha}</Text>
+          </View>
         </View>
       </View>
-    </View>
-  </TouchableOpacity>
-);
+    </TouchableOpacity>
+  );
 
   return (
     <View style={styles.container}>
-      <FlatList
-        data={reviews}
-        keyExtractor={(item) => item.id.toString()}
-        renderItem={renderReview}
-      />
+      {loading ? (
+        <Text>Carregando...</Text>
+      ) : error ? (
+        <Text>{error}</Text>
+      ) : (
+        <FlatList
+          data={avaliacoes} // Usando o estado correto para a FlatList
+          keyExtractor={(item) => item.id_livro.toString()} // Usando `id_livro` como chave
+          renderItem={renderReview}
+        />
+      )}
     </View>
   );
 };

@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://localhost:7228/api/avaliacao', // Substitua pela URL real
+  baseURL: 'https://localhost:7228/api/', // Substitua pela URL real
   timeout: 10000,
 });
 
@@ -27,7 +27,7 @@ const postAvaliacoes = async (avaliacoesData) => {
     return response.data; // Retorna os dados recebidos da API
   } catch (error) {
     // Se ocorrer erro, a função lança uma exceção
-    throw new Error(error.message || 'Erro ao criar livro');
+    throw new Error(error.message || 'Erro ao avaliar livro');
   }
 };
 
