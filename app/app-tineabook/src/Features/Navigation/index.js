@@ -12,7 +12,7 @@ const AppNavigator = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Home" component={Home} options={{ title: 'Minhas Resenhas' }} />
+        <Stack.Screen name="Home" component={Home} options={{}} />
         <Stack.Screen name="DetalhesResenha" component={DetalhesResenha} options={{ }} />
       </Stack.Navigator>
     </NavigationContainer>
