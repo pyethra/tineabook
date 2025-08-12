@@ -7,7 +7,6 @@ import {
   TextInput,
   Image,
   TouchableOpacity,
-  Modal,
   Button,
   Pressable,
   Keyboard,
@@ -22,7 +21,6 @@ const Pesquisa = ({ navigation }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [books, setBooks] = useState([]);
   const [selectedBook, setSelectedBook] = useState(null);
-  const [modalVisible, setModalVisible] = useState(false);
   const [resenha, setResenha] = useState('');
   const [rating, setRating] = useState(0);
   const searchInputRef = useRef(null);
@@ -87,7 +85,6 @@ const Pesquisa = ({ navigation }) => {
       rating,
     };
     salvarResenha(novaResenha);
-    setModalVisible(false);
     setSelectedBook(null);
     setResenha('');
     setRating(0);
@@ -97,11 +94,10 @@ const Pesquisa = ({ navigation }) => {
 
   const renderLivros = ({ item }) => (
     <TouchableOpacity
-      onPress={() => {
-        setSelectedBook(item);
-        setModalVisible(true);
-      }}
-      style={styles.bookContainerPesquisa}>
+          onPress={() => {
+               navigation.navigate('DetalhesLivro', { livroId: item.id });
+          }}
+          style={styles.bookContainerPesquisa}>
       <Image
         source={{ uri: item.volumeInfo.imageLinks?.thumbnail }}
         style={styles.thumbnail}
@@ -130,60 +126,6 @@ const Pesquisa = ({ navigation }) => {
         renderItem={renderLivros}
         style={styles.bookList}
       />
-
-      {selectedBook && (
-        <Modal
-          visible={modalVisible}
-          transparent={true}
-          animationType="slide"
-          onRequestClose={() => setModalVisible(false)}>
-          <View style={styles.modalContainer}>
-            <View style={styles.modalContent}>
-              <Pressable
-                onPress={() => setModalVisible(false)}
-                style={styles.botao}>
-                <Image style={styles.tinyLogo} source={IconeVoltar} />
-              </Pressable>
-              <View style={styles.infoLivro}>
-                <Image
-                  source={{
-                    uri: selectedBook.volumeInfo.imageLinks?.thumbnail,
-                  }}
-                  style={styles.largeThumbnail}
-                />
-                <View style={styles.infoLiv}>
-                  <Text style={styles.selectedTitle}>
-                    {selectedBook.volumeInfo.title}
-                  </Text>
-                  <Text style={styles.selectedAuthor}>
-                    por{' '}
-                    {selectedBook.volumeInfo.authors?.[0] ||
-                      'Autor desconhecido'}
-                  </Text>
-                </View>
-              </View>
-              <View>
-                <Rating
-                  type="star"
-                  ratingCount={5}
-                  imageSize={30}
-                  startingValue={rating}
-                  onFinishRating={(val) => setRating(val)}
-                  style={{ marginVertical: 10 }}
-                />
-              </View>
-              <TextInput
-                placeholder="Escreva sua resenha"
-                value={resenha}
-                onChangeText={setResenha}
-                style={[styles.input, styles.reviewInput]}
-                multiline
-              />
-              <Button title="Enviar Resenha" onPress={addResenha} />
-            </View>
-          </View>
-        </Modal>
-      )}
     </View>
   );
 };

@@ -9,6 +9,7 @@ import Pesquisa from './src/Features/Pesquisa';
 import Home from './src/Geral/screens/Home';
 import Estante_Pessoal from './src/Geral/screens/Estante_pessoal';
 import ExibirResenha from './src/Features/Resenha/screens/exibirResenha';
+import DetalhesLivro from './src/Geral/screens/DetalhesLivro';
 import { MarcacoesProvider } from './src/Geral/screens/Marcacoes_Context';
 
 const Tab = createBottomTabNavigator();
@@ -70,14 +71,15 @@ const MainStack = () => (
       component={TabNavigator}
       options={{ headerShown: false }}
     />
-    <Stack.Screen
-      name="ExibirResenha"
-      component={ExibirResenha}
-      options={{
-        headerShown: true,
-        title: 'Detalhes da Resenha',
+  
+    <Stack.Screen 
+    name="DetalhesLivro" 
+    component={DetalhesLivro} 
+    options={{ 
+    title: 'Detalhes do Livro' 
       }}
     />
+
   </Stack.Navigator>
 );
 
