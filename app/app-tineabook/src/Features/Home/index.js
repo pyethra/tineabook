@@ -3,19 +3,22 @@ import { View, Text, FlatList, StyleSheet, Image } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { AirbnbRating } from 'react-native-ratings';
 import { useFocusEffect } from '@react-navigation/native';
+import {Livro} from '../Livro/services/fetchLivro'
+
+import axios from "axios";
+import getAvaliacao from '../../Geral/API/callAPI_db'
 
 const ReviewScreen = () => {
-  const [reviews, setReviews] = useState([]);
+
+  const [reviews, setReviews] = useState ([]);
 
   const loadReviews = async () => {
     try {
-      const storedReviews = await AsyncStorage.getItem('reviews');
-      const reviews = storedReviews ? JSON.parse(storedReviews) : [];
-      setReviews(reviews.reverse()); // Inverte a ordem para exibir as mais recentes primeiro
+      const reviews = await getAvaliacao();
     } catch (error) {
-      console.error('Erro ao carregar resenhas:', error);
+      console.log('erro ao carregar as resenhas:', error)
     }
-  };
+  }
 
   useFocusEffect(
     React.useCallback(() => {

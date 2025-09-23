@@ -1,7 +1,14 @@
 import React from 'react';
 import { View, Text, Image, TouchableOpacity, StyleSheet } from 'react-native';
+import Heart from './heart'
+import { State } from 'react-native-gesture-handler';
 
 export default function ResenhaCard({ item, onToggleCurtida }) {
+
+  const Curtida =()=> {
+    const [curtida, setCurtida] = useState();
+  }
+
   return (
     <View style={styles.cartaoResenha}>
       <View style={styles.cabecalhoResenha}>
