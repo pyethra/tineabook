@@ -1,24 +1,23 @@
-import React, { useState } from 'react';
-import { View, Text, FlatList, StyleSheet, Image } from 'react-native';
-import AsyncStorage from '@react-native-async-storage/async-storage';
-import { AirbnbRating } from 'react-native-ratings';
-import { useFocusEffect } from '@react-navigation/native';
-import {Livro} from '../Livro/services/fetchLivro'
+import React, { useState } from "react";
+import { View, Text, FlatList, StyleSheet, Image } from "react-native";
+import AsyncStorage from "@react-native-async-storage/async-storage";
+import { AirbnbRating } from "react-native-ratings";
+import { useFocusEffect } from "@react-navigation/native";
+import { Livro } from "../Livro/services/fetchLivro";
 
 import axios from "axios";
-import getAvaliacao from '../../Geral/API/callAPI_db'
+import getAvaliacao from "../../Geral/API/callAPI_db";
 
 const ReviewScreen = () => {
-
-  const [reviews, setReviews] = useState ([]);
+  const [reviews, setReviews] = useState([]);
 
   const loadReviews = async () => {
     try {
       const reviews = await getAvaliacao();
     } catch (error) {
-      console.log('erro ao carregar as resenhas:', error)
+      console.log("erro ao carregar as resenhas:", error);
     }
-  }
+  };
 
   useFocusEffect(
     React.useCallback(() => {
@@ -29,7 +28,10 @@ const ReviewScreen = () => {
   const renderReview = ({ item }) => (
     <View style={styles.reviewContainer}>
       <View style={styles.resenha}>
-        <Image source={{ uri: item.coverImage }} style={styles.reviewThumbnail} />
+        <Image
+          source={{ uri: item.coverImage }}
+          style={styles.reviewThumbnail}
+        />
         <View style={styles.livro}>
           <Text style={styles.reviewTitle}>{item.title}</Text>
           <Text style={styles.reviewAuthor}>{item.author}</Text>
@@ -62,31 +64,31 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 10,
-    backgroundColor: '#fff',
+    backgroundColor: "#fff",
   },
   resenha: {
-    flexDirection: 'row',
+    flexDirection: "row",
   },
   livro: {
     marginLeft: 10,
-    justifyContent: 'center',
+    justifyContent: "center",
     flex: 1,
   },
   reviewContainer: {
     marginVertical: 5,
     padding: 10,
     borderWidth: 1,
-    borderColor: '#ddd',
+    borderColor: "#ddd",
     borderRadius: 8,
-    backgroundColor: '#f0f0f0',
+    backgroundColor: "#f0f0f0",
   },
   reviewTitle: {
     fontSize: 18,
-    fontWeight: 'bold',
+    fontWeight: "bold",
   },
   reviewAuthor: {
     fontSize: 16,
-    color: '#555',
+    color: "#555",
   },
   reviewThumbnail: {
     width: 50,
@@ -96,10 +98,10 @@ const styles = StyleSheet.create({
   reviewText: {
     fontSize: 14,
     marginTop: 5,
-    color: '#333',
+    color: "#333",
   },
   starContainer: {
-    alignSelf: 'flex-start',
+    alignSelf: "flex-start",
   },
 });
 
