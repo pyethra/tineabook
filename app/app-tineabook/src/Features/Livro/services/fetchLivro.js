@@ -4,7 +4,7 @@ import { getHist } from "./apiDB";
 
 // mapeia os dados vindos do banco
 const mapLivroDB = (dbData) => ({
-  id: dbData.id_livro,
+  idLivro: dbData.id_livro,
   usuarioId: dbData.id_usuario,
   status: dbData.status,
   estrelas: dbData.estrelas,
@@ -14,7 +14,7 @@ const mapLivroDB = (dbData) => ({
 
 // mapeia os dados vindos do Google Books
 const mapLivroGoogle = (apiData) => ({
-  id: apiData.id,
+  idLivro: apiData.id,
   title: apiData.volumeInfo?.title,
   authors: apiData.volumeInfo?.authors || [],
   publisher: apiData.volumeInfo?.publisher,

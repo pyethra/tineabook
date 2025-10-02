@@ -2,7 +2,7 @@ import axios from "axios";
 
 const GOOGLE_BOOKS_API = "https://www.googleapis.com/books/v1/volumes";
 
-export const getBookByID = async (id) => {
+const getBookByID = async (id) => {
   try {
     const response = await axios.get(`${GOOGLE_BOOKS_API}/${id}`);
     return response.data;
@@ -11,3 +11,5 @@ export const getBookByID = async (id) => {
     throw error;
   }
 };
+
+export default getBookByID;
