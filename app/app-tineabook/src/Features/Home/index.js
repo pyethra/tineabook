@@ -3,8 +3,8 @@
 import React, { useEffect, useState } from "react";
 import { View, FlatList, ActivityIndicator, Text } from "react-native";
 import Livro from "../Livro/components/Livro";
-import { fetchLivro } from "../../Geral/API/fetchLivro";
-import { getHist } from "../../Geral/API/apiDB"; // consulta banco
+import { fetchLivro } from "../Livro/services/fetchLivro";
+import { getAvaliacao } from "../../Geral/API/callAPI_db"; // consulta banco
 
 const Home = () => {
   const [livros, setLivros] = useState([]);
@@ -44,7 +44,7 @@ const Home = () => {
   return (
     <FlatList
       data={livros}
-      keyExtractor={(item) => item.id}
+      keyExtractor={(item) => item.idLivro}
       renderItem={({ item }) => <Livro data={item} />}
       contentContainerStyle={{ padding: 16 }}
     />

@@ -1,6 +1,5 @@
-import { getBookByID } from "./googleAPI";
-import { getAvaliacao } from "./apiDB";
-import { getHist } from "./apiDB";
+import getBookByID from "../../Geral/API/callAPI_googlebooks";
+import { getAvaliacao, getHist } from "../../Geral/API/callAPI_db";
 
 // mapeia os dados vindos do banco
 const mapLivroDB = (dbData) => ({
@@ -36,7 +35,7 @@ const mergeLivroData = (dbData, apiData) => ({
 export const fetchLivro = async (idLivro) => {
   try {
     const [dbData, apiData] = await Promise.all([
-      //getAvaliacao(idUsuario), // precisa filtrar dentro da função
+      getAvaliacao(), // busca todas as avaliações
       getBookByID(idLivro),
     ]);
 
