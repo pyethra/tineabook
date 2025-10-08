@@ -8,12 +8,12 @@ const apiDB = axios.create({
 
 // exemplo de função GET
 export const getAvaliacao = async () => {
-  const response = await api.get(`/avaliacao/`);
+  const response = await apiDB.get(`/avaliacao/`);
   return response.data;
 };
 
 export const getHist = async () => {
-  const response = await api.get(`/historico/`);
+  const response = await apiDB.get(`/historico/`);
   return response.data;
 };
 
