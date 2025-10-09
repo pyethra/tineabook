@@ -3,12 +3,10 @@
 import React from "react";
 import { View, Text, StyleSheet, Image } from "react-native";
 import Estrelas from "./Estrelas";
+import "../../Livro/services/fetchLivro";
 
 const Livro = ({ data }) => {
   if (!data) return null;
-
-  // 👇 debug para inspecionar os dados que estão vindo
-  console.log("📚 Dados do livro:", data);
 
   const { title, authors, thumbnail, estrelas, resenha } = data;
 

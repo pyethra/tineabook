@@ -2,18 +2,18 @@ import axios from "axios";
 
 // cria instância do axios com configs padrão
 const apiDB = axios.create({
-  baseURL: "https://localhost:7228/api/", // sua URL base
-  timeout: 5000, // tempo limite
+  baseURL: "http://0.0.0.0:7228/api", // sua URL base
+  timeout: 5000000, // tempo limite
 });
 
 // exemplo de função GET
 export const getAvaliacao = async () => {
-  const response = await api.get(`/avaliacao/`);
+  const response = await apiDB.get(`/avaliacao/`);
   return response.data;
 };
 
 export const getHist = async () => {
-  const response = await api.get(`/historico/`);
+  const response = await apiDB.get(`/historico/`);
   return response.data;
 };
 

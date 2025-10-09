@@ -1,16 +1,17 @@
-import React from 'react';
-import { Image, StyleSheet } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { createStackNavigator, TransitionPresets } from '@react-navigation/stack';
-import { Entypo, Feather } from '@expo/vector-icons';
+import React from "react";
+import { NavigationContainer } from "@react-navigation/native";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import {
+  createStackNavigator,
+  TransitionPresets,
+} from "@react-navigation/stack";
+import { Entypo, Feather } from "@expo/vector-icons";
 
-import Pesquisa from './src/Features/Pesquisa';
-import Home from './src/Geral/screens/Home';
-import Estante_Pessoal from './src/Geral/screens/Estante_pessoal';
-import ExibirResenha from './src/Features/Resenha/screens/exibirResenha';
-import DetalhesLivro from './src/Geral/screens/DetalhesLivro';
-import { MarcacoesProvider } from './src/Geral/screens/Marcacoes_Context';
+import Pesquisa from "./src/Features/Pesquisa";
+import Home from "./src/Geral/screens/Home";
+import Estante_Pessoal from "./src/Geral/screens/Estante_pessoal";
+import DetalhesLivro from "./src/Geral/screens/DetalhesLivro";
+import { MarcacoesProvider } from "./src/Geral/screens/Marcacoes_Context";
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
@@ -20,11 +21,11 @@ const TabNavigator = () => (
   <Tab.Navigator
     screenOptions={{
       tabBarStyle: {
-        backgroundColor: '#121212',
-        borderTopColor: 'transparent',
+        backgroundColor: "#121212",
+        borderTopColor: "transparent",
       },
-      tabBarActiveTintColor: '#FFF',
-      tabBarInactiveTintColor: '#888',
+      tabBarActiveTintColor: "#FFF",
+      tabBarInactiveTintColor: "#888",
       tabBarShowLabel: false,
       headerShown: false,
     }}
@@ -34,7 +35,7 @@ const TabNavigator = () => (
       component={Home}
       options={{
         tabBarIcon: ({ focused }) => (
-          <Feather name="home" size={30} color={focused ? '#FFF' : '#888'} />
+          <Feather name="home" size={30} color={focused ? "#FFF" : "#888"} />
         ),
       }}
     />
@@ -43,7 +44,11 @@ const TabNavigator = () => (
       component={Pesquisa}
       options={{
         tabBarIcon: ({ focused }) => (
-          <Entypo name="magnifying-glass" size={30} color={focused ? '#FFF' : '#888'} />
+          <Entypo
+            name="magnifying-glass"
+            size={30}
+            color={focused ? "#FFF" : "#888"}
+          />
         ),
       }}
     />
@@ -52,7 +57,7 @@ const TabNavigator = () => (
       component={Estante_Pessoal}
       options={{
         tabBarIcon: ({ focused }) => (
-          <Entypo name="archive" size={30} color={focused ? '#FFF' : '#888'} />
+          <Entypo name="archive" size={30} color={focused ? "#FFF" : "#888"} />
         ),
       }}
     />
@@ -71,15 +76,14 @@ const MainStack = () => (
       component={TabNavigator}
       options={{ headerShown: false }}
     />
-  
-    <Stack.Screen 
-    name="DetalhesLivro" 
-    component={DetalhesLivro} 
-    options={{ 
-    title: 'Detalhes do Livro' 
+
+    <Stack.Screen
+      name="DetalhesLivro"
+      component={DetalhesLivro}
+      options={{
+        title: "Detalhes do Livro",
       }}
     />
-
   </Stack.Navigator>
 );
 

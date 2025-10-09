@@ -2,7 +2,12 @@ import React from "react";
 import { View, Text, StyleSheet, Image } from "react-native";
 import { Rating } from "react-native-ratings";
 
-const Estrelas = ({ title, authors, year }) => {
+const Estrelas = () => {
+  const [ValorEstrela, setValorEstrela] = useState(initialState);
+  const [StatusRead, setStatusRead] = useState();
+
+  setStatusRead = false;
+
   return (
     <View style={styles.Avaliar}>
       <Rating
@@ -10,7 +15,7 @@ const Estrelas = ({ title, authors, year }) => {
         type="star"
         fractions={1}
         startingValue={0}
-        readonly
+        readonly={StatusRead}
         imageSize={40}
         onFinishRating={ratingCompleted}
         style={{ paddingVertical: 10 }}
