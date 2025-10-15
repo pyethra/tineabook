@@ -2,7 +2,7 @@ import axios from "axios";
 
 // cria instância do axios com configs padrão
 const apiDB = axios.create({
-  baseURL: "http://0.0.0.0:7228/api", // sua URL base
+  baseURL: "https://192.168.1.110:7228/api/", // sua URL base
   timeout: 5000000, // tempo limite
 });
 
