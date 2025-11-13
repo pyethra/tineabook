@@ -5,15 +5,14 @@ import {
   FlatList,
   Image,
   StyleSheet,
-  ProgressBarAndroid,
 } from 'react-native';
-import { MarcacoesContext } from '../screens/Marcacoes_Context'
+import { MarcacoesContext } from '../../../shared/contexts/MarcacoesContext';
 import * as Progress from 'react-native-progress';
 import { Dimensions } from 'react-native';
 
 const windowWidth = Dimensions.get('window').width;
 
-const Estante_pessoal = () => {
+const EstanteUser = () => {
   const { marcacoes } = useContext(MarcacoesContext);
 
   const marcacoesInversas = [...marcacoes].reverse();
@@ -56,7 +55,7 @@ const Estante_pessoal = () => {
   return (
     <View style={styles.container}>
       <FlatList
-        data={marcacoesInversas} // Utilizando a lista invertida
+        data={marcacoesInversas}
         keyExtractor={(item, index) => index.toString()}
         renderItem={renderMarcacao}
       />
@@ -105,4 +104,5 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Estante_pessoal;
+export default EstanteUser;
+

@@ -1,26 +1,24 @@
 import React, { useState } from 'react';
 import { View, Text, FlatList, StyleSheet, Image } from 'react-native';
-import AsyncStorage from '@react-native-async-storage/async-storage';
 import { AirbnbRating } from 'react-native-ratings';
 import { useFocusEffect } from '@react-navigation/native';
 import { useNavigation } from '@react-navigation/native';
 import { TouchableOpacity } from 'react-native';
 
-import { avalicoesService } from '../../Features/Resenha/services/servicesAPI_Resenha'; // Ajuste o import para o seu serviço correto
+import 'src/shared/api/callAPI_db.js';
 
 const Home = () => {
-  const [avaliacoes, setAvaliacoes] = useState([]); // Use apenas um estado para armazenar as avaliações
+  const [avaliacoes, setAvaliacoes] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  // Função que carrega as avaliações da API
   const carregarResenha = () => {
     setLoading(true);
     setError(null);
 
-    avalicoesService.getAvaliacoes()
+    getAvaliacoes()
       .then((dados) => {
-        setAvaliacoes(dados); // Atualiza o estado com as avaliações recebidas
+        setAvaliacoes(dados);
         setLoading(false);
       })
       .catch((erro) => {
@@ -29,16 +27,14 @@ const Home = () => {
       });
   };
 
-  // Usando o `useFocusEffect` para chamar `carregarResenha` sempre que a tela for focada
   useFocusEffect(
     React.useCallback(() => {
-      carregarResenha(); // Carrega as resenhas cada vez que a tela recebe foco
+      carregarResenha();
     }, [])
   );
 
   const navigation = useNavigation();
 
-  // Função para renderizar cada item da lista de avaliações
   const renderReview = ({ item }) => (
     <TouchableOpacity onPress={() => navigation.navigate('ExibirResenha', { resenhaId: item.id })}>
       <View style={styles.reviewContainer}>
@@ -49,7 +45,7 @@ const Home = () => {
             <Text style={styles.reviewAuthor}>{item.author}</Text>
             <AirbnbRating
               count={5}
-              defaultRating={item.estrelas} // Usando a propriedade correta para a classificação
+              defaultRating={item.estrelas}
               size={20}
               showRating={false}
               isDisabled
@@ -70,8 +66,8 @@ const Home = () => {
         <Text>{error}</Text>
       ) : (
         <FlatList
-          data={avaliacoes} // Usando o estado correto para a FlatList
-          keyExtractor={(item) => item.id_livro.toString()} // Usando `id_livro` como chave
+          data={avaliacoes}
+          keyExtractor={(item) => item.id_livro.toString()}
           renderItem={renderReview}
         />
       )}
@@ -124,4 +120,5 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Home; // Ex Review Screen renomeado para Home para manter a consistência com o arquivo original
+export default Home;
+

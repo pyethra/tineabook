@@ -7,25 +7,17 @@ import {
   TextInput,
   Image,
   TouchableOpacity,
-  Button,
-  Pressable,
   Keyboard,
 } from 'react-native';
-import AsyncStorage from '@react-native-async-storage/async-storage';
-import { AirbnbRating } from 'react-native-ratings';
 import { useFocusEffect } from '@react-navigation/native';
 
-import IconeVoltar from '../assets/chevron-left.png';
+import pesquisaLivros from '../services/pesquisaLivros';
 
 const Pesquisa = ({ navigation }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [books, setBooks] = useState([]);
-  const [selectedBook, setSelectedBook] = useState(null);
-  const [resenha, setResenha] = useState('');
-  const [rating, setRating] = useState(0);
   const searchInputRef = useRef(null);
 
-  // Garante que o teclado será exibido ao entrar na tela
   useFocusEffect(
     React.useCallback(() => {
       const focusInput = () => {
@@ -34,7 +26,6 @@ const Pesquisa = ({ navigation }) => {
         }
       };
 
-      // Delay para garantir que o foco seja aplicado corretamente
       const timeout = setTimeout(focusInput, 100);
 
       return () => clearTimeout(timeout);
@@ -43,60 +34,25 @@ const Pesquisa = ({ navigation }) => {
 
   useEffect(() => {
     if (searchTerm) {
-      pesquisaLivros();
+      buscarLivros();
     } else {
       setBooks([]);
     }
   }, [searchTerm]);
 
-  const pesquisaLivros = async () => {
+  const buscarLivros = async () => {
     try {
-      const response = await fetch(
-        `https://www.googleapis.com/books/v1/volumes?q=${searchTerm}`
-      );
-      const data = await response.json();
-      setBooks(data.items || []);
+      const items = await pesquisaLivros(searchTerm);
+      setBooks(items);
     } catch (error) {
       console.error('Erro ao buscar livros:', error);
     }
   };
 
-  const salvarResenha = async (review) => {
-    try {
-      const storedReviews = await AsyncStorage.getItem('reviews');
-      const reviews = storedReviews ? JSON.parse(storedReviews) : [];
-      await AsyncStorage.setItem(
-        'reviews',
-        JSON.stringify([...reviews, review])
-      );
-    } catch (error) {
-      console.error('Erro ao salvar resenhas:', error);
-    }
-  };
-
-  const addResenha = () => {
-    if (!selectedBook) return;
-    const novaResenha = {
-      id: Date.now(),
-      title: selectedBook.volumeInfo.title,
-      author: selectedBook.volumeInfo.authors?.[0] || 'Autor desconhecido',
-      coverImage: selectedBook.volumeInfo.imageLinks?.thumbnail,
-      resenha,
-      rating,
-    };
-    salvarResenha(novaResenha);
-    setSelectedBook(null);
-    setResenha('');
-    setRating(0);
-    setSearchTerm(''); // Limpa o campo de pesquisa após enviar a resenha
-    Keyboard.dismiss(); // Fecha o teclado
-  };
-
   const renderLivros = ({ item }) => (
     <TouchableOpacity
       onPress={() => {
-        console.log('Id do livro selecionado:', item.id);
-          navigation.navigate('DetalhesLivro', { livroId: item.id });
+        navigation.navigate('DetalhesLivro', { livroId: item.id });
       }}
       style={styles.bookContainerPesquisa}>
       <Image
@@ -132,24 +88,6 @@ const Pesquisa = ({ navigation }) => {
 };
 
 const styles = StyleSheet.create({
-  botao: {
-    width: 30,
-    padding: 5,
-  },
-  tinyLogo: {
-    width: 15,
-    height: 15,
-    left:-10,
-    marginBottom: 5,
-  },
-  infoLiv: {
-    flexDirection: 'column',
-    justifyContent: 'center',
-  },
-  infoLivro: {
-    flexDirection: 'row',
-    maxWidth: 195,
-  },
   container: {
     flex: 1,
     padding: 10,
@@ -191,33 +129,7 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     backgroundColor: '#fff',
   },
-  selectedTitle: {
-    fontSize: 18,
-    fontWeight: 'bold',
-    color: '#333',
-    marginBottom: 5,
-    marginLeft: 5,
-  },
-  selectedAuthor: {
-    fontSize: 16,
-    color: '#555',
-    marginBottom: 10,
-    marginLeft: 5,
-  },
-  largeThumbnail: {
-    width: 100,
-    height: 150,
-    justifyContent: 'center',
-  },
-  reviewInput: {
-    height: 100,
-    textAlignVertical: 'top',
-    marginVertical: 10,
-  },
-  starContainer: {
-    marginBottom: 10,
-    marginTop: 10,
-  },
 });
 
 export default Pesquisa;
+

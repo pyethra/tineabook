@@ -7,11 +7,11 @@ import {
 } from "@react-navigation/stack";
 import { Entypo, Feather } from "@expo/vector-icons";
 
-import Pesquisa from "./src/Features/Pesquisa";
-import Home from "./src/Geral/screens/Home";
-import Estante_Pessoal from "./src/Geral/screens/Estante_pessoal";
-import DetalhesLivro from "./src/Geral/screens/DetalhesLivro";
-import { MarcacoesProvider } from "./src/Geral/screens/Marcacoes_Context";
+import Pesquisa from "./src/features/Pesquisa";
+import Home from "./src/features/Home";
+import EstanteUser from "./src/features/Estante-User";
+import { DetalhesLivro } from "./src/features/Livro";
+import { MarcacoesProvider } from "./src/shared/contexts/MarcacoesContext";
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
@@ -53,8 +53,8 @@ const TabNavigator = () => (
       }}
     />
     <Tab.Screen
-      name="Estante_Pessoal"
-      component={Estante_Pessoal}
+      name="Estante-User"
+      component={EstanteUser}
       options={{
         tabBarIcon: ({ focused }) => (
           <Entypo name="archive" size={30} color={focused ? "#FFF" : "#888"} />
