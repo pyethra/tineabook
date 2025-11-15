@@ -2,8 +2,8 @@ import axios from "axios";
 
 // cria instância do axios com configs padrão
 const apiDB = axios.create({
-  baseURL: "https://192.168.1.110:7228/api/", // sua URL base
-  timeout: 5000000, // tempo limite
+  baseURL: "http://tineabook.runasp.net/api", // sua URL base
+  timeout: 5000, // tempo limite
 });
 
 // exemplo de função GET
