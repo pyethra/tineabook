@@ -7,10 +7,10 @@ import {
 } from "@react-navigation/stack";
 import { Entypo, Feather } from "@expo/vector-icons";
 
-import Pesquisa from "./src/features/Pesquisa";
-import Home from "./src/features/Home";
-import EstanteUser from "./src/features/Estante-User";
-import { DetalhesLivro } from "./src/features/Livro";
+import Pesquisa from "./src/features/Pesquisa/screen/Pesquisa";
+import Home from "./src/features/Estante-User/screen/Home";
+import EstanteUser from "./src/features/Estante-User/screen/EstanteUser";
+//import { DetalhesLivro } from "./src/features/Livro";
 import { MarcacoesProvider } from "./src/shared/contexts/MarcacoesContext";
 
 const Tab = createBottomTabNavigator();
